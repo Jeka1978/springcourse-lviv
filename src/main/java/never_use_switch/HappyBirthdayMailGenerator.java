@@ -7,14 +7,14 @@ import org.springframework.stereotype.Component;
  * @since 3.2
  */
 @Component
-public class WelcomeMailGenerator implements MailGenerator {
+public class HappyBirthdayMailGenerator implements MailGenerator {
     @Override
     public String generateHtml() {
-        return "<html>Hello new Client!!!</html>";
+        return "<html>Happy Birthday</html>";
     }
 
     @Override
     public int myCode() {
-        return 1;
+        return 3;
     }
 }
