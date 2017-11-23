@@ -4,6 +4,7 @@ import lombok.SneakyThrows;
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.config.BeanPostProcessor;
 import org.springframework.lang.Nullable;
+import org.springframework.stereotype.Component;
 
 import java.lang.reflect.Field;
 import java.util.Random;
@@ -12,6 +13,7 @@ import java.util.Random;
  * @author Evgeny Borisov
  * @since 3.2
  */
+@Component
 public class InjectRandomIntBeanPostProcessor implements BeanPostProcessor {
 
     private Random random = new Random();
